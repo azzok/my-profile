@@ -182,11 +182,15 @@
               <!-- knowledge list -->
               <ul class="art-knowledge-list p-15-0">
                 <!-- list item -->
-                <li>Bootstrap, Materialize</li>
+                <li>PHP, MySQL, MongoDB</li>
                 <!-- list item -->
-                <li>Stylus, Sass, Less</li>
+                <li>React JS, Angular CLI</li>
                 <!-- list item -->
-                <li>Gulp, Webpack, Grunt</li>
+                <li>NodeJS, ExpressJS</li>
+                <!-- list item -->
+                <li>Ionic</li>
+                <!-- list item -->
+                <li>Laravel, Wordpress</li>
                 <!-- list item -->
                 <li>GIT knowledge</li>
               </ul>
