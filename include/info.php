@@ -192,7 +192,7 @@
                 <!-- list item -->
                 <li>Laravel, Wordpress</li>
                 <!-- list item -->
-                <li>GIT knowledge</li>
+                <li>GIT knowledge, Docker, Jenkins</li>
               </ul>
               <!-- knowledge list end -->
 
