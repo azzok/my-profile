@@ -1,5 +1,6 @@
 <?php
 require_once("include/header.php");
+$menu="index";
 ?>
 
   <!-- app -->
@@ -66,7 +67,7 @@ require_once("include/header.php");
                         </div>
                         <!-- main title end -->
                         <!-- photo -->
-                        <img src="img/face-2.png" class="art-banner-photo" alt="Your Name">
+                        <!-- <img src="img/face-2.png" class="art-banner-photo" alt="Your Name"> -->
                       </div>
                       <!-- banner overlay end -->
                     </div>
@@ -730,14 +731,7 @@ require_once("include/header.php");
               <!-- container -->
               <div class="container-fluid">
 
-                <!-- footer -->
-                <footer>
-                  <!-- copyright -->
-                  <div>©2021 Ashokkumar - Web developer</div>
-                  <!-- author ( Please! Do not delete it. You are awesome! :) -->
-                  <div>&#160; <a href="https://grinfotech.com/" target="_blank">GR Infotech</a></div>
-                </footer>
-                <!-- footer end -->
+                <?php include("include/copyright.php"); ?>
 
               </div>
               <!-- container end -->
@@ -775,61 +769,12 @@ require_once("include/header.php");
             <!-- scroll frame -->
             <div class="art-scroll-frame">
 
-              <!-- menu -->
-              <nav id="swupMenu">
-                <!-- menu list -->
-                <ul class="main-menu">
-                  <!-- menu item -->
-                  <li class="menu-item current-menu-item"><a href="home.html">Home</a></li>
-                  <!-- menu item -->
-                  <li class="menu-item menu-item-has-children">
-                    <a href="#.">Portfolio</a>
-                    <!-- sub menu -->
-                    <ul class="sub-menu">
-                      <!-- lvl 2 nav link -->
-                      <li class="menu-item"><a href="portfolio-2-col.html">2 column</a></li>
-                      <!-- lvl 2 nav link -->
-                      <li class="menu-item"><a href="portfolio-3-col.html">3 column</a></li>
-                      <!-- lvl 2 nav link -->
-                      <li class="menu-item"><a href="portfolio-2-col-masonry.html">2 column masonry</a></li>
-                      <!-- lvl 2 nav link -->
-                      <li class="menu-item"><a href="portfolio-3-col-masonry.html">3 column masonry</a></li>
-                      <!-- lvl 2 nav link -->
-                      <li class="menu-item"><a href="portfolio-single.html">Single project</a></li>
-                      <!-- lvl 2 nav link -->
-                      <li class="menu-item"><a href="portfolio-single-2.html">Single project 2</a></li>
-                    </ul>
-                    <!-- sub menu end -->
-                  </li>
-                  <!-- menu item -->
-                  <li class="menu-item"><a href="history.html">History</a></li>
-                  <!-- menu item -->
-                  <li class="menu-item"><a href="contact.html">Contact</a></li>
-                  <!-- menu item -->
-                  <li class="menu-item menu-item-has-children">
-                    <a href="#.">Blog</a>
-                    <!-- sub menu -->
-                    <ul class="sub-menu">
-                      <!-- lvl 2 nav link -->
-                      <li class="menu-item"><a href="blog-2-col.html">2 column</a></li>
-                      <!-- lvl 2 nav link -->
-                      <li class="menu-item"><a href="blog-3-col.html">3 column</a></li>
-                      <!-- lvl 2 nav link -->
-                      <li class="menu-item"><a href="blog-post.html">Publication</a></li>
-                    </ul>
-                    <!-- sub menu end -->
-                  </li>
-                  <!-- menu item -->
-                  <li class="menu-item"><a href="onepage.html" target="_blank">Onepage</a></li>
-                </ul>
-                <!-- menu list end -->
-              </nav>
-              <!-- menu end -->
+                <?php include('include/nav.php'); ?>
 
               <!-- language change -->
               <ul class="art-language-change">
                 <!-- language item -->
-                <li><a href="/tn/index.php">TN</a></li>
+                <!-- <li><a href="/tn/index.php">TN</a></li> -->
                 <!-- language item -->
                 <li class="art-active-lang"><a href="#.">EN</a></li>
               </ul>

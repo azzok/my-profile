@@ -1,9 +1,6 @@
 <!doctype html>
 <html lang="zxx">
-
-
-<!-- Mirrored from elanta.app/nazar/arter-demo/home.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Aug 2021 07:14:15 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">

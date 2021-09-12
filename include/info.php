@@ -19,8 +19,8 @@
             <div class="art-header">
               <!-- avatar -->
               <div class="art-avatar">
-                <a data-fancybox="avatar" href="img/face-1.jpg" class="art-avatar-curtain">
-                  <img src="img/face-1.jpg" alt="avatar">
+                <a data-fancybox="avatar" href="img/my-face.jpg" class="art-avatar-curtain">
+                  <img src="img/my-face.jpg" alt="avatar">
                   <i class="fas fa-expand"></i>
                 </a>
                 <!-- available -->
