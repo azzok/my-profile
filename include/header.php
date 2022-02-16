@@ -20,7 +20,7 @@
   <!-- main css -->
   <link rel="stylesheet" href="css/style.css">
 
-  <title>Ashokkumar - Web developer</title>
+  <title>ASHOKKUMAR P - Web developer</title>
 </head>
 
 <body>

@@ -31,9 +31,9 @@
               </div>
               <!-- avatar end -->
               <!-- name -->
-              <h5 class="art-name mb-10"><a href="javascript:void(0);">Ashokkumar</a></h5>
+              <h5 class="art-name mb-10"><a href="index.php">ASHOKKUMAR P</a></h5>
               <!-- post -->
-              <div class="art-sm-text">Back-end Developer <br>Open-source coustomizer, </div>
+              <div class="art-sm-text">Back-end Developer, <br>Mobile App Developer,<br>Open-source coustomizer, </div>
             </div>
             <!-- info bar header end -->
 
@@ -44,6 +44,10 @@
               <div class="art-table p-15-15">
                 <!-- about text -->
                 <ul>
+                  <!-- country -->
+                  <li>
+                    <h6>Qualification:</h6><span>B.E</span>
+                  </li>
                   <!-- country -->
                   <li>
                     <h6>Residence:</h6><span>India</span>
@@ -219,9 +223,9 @@
               <!-- social link -->
               <a href="#." target="_blank"><i class="fab fa-linkedin-in"></i></a>
               <!-- social link -->
-              <a href="#." target="_blank"><i class="fab fa-dribbble"></i></a>
+              <a href="https://azzok.herokuapp.com/" target="_blank"><i class="fab fa-dribbble"></i></a>
               <!-- social link -->
-              <a href="#." target="_blank"><i class="fab fa-behance"></i></a>
+              <a href="https://stackoverflow.com/users/8682924/azzok" target="_blank"><i class="fab fa-stack-overflow"></i></a>
               <!-- social link -->
               <a href="https://github.com/azzok" target="_blank"><i class="fab fa-github"></i></a>
               <!-- social link -->
