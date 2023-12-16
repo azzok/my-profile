@@ -242,6 +242,42 @@ $(function() {
 
   bar.animate(.85);
 
+  var bar = new ProgressBar.Line(lineprog6, {
+    strokeWidth: 1.72,
+    easing: 'easeInOut',
+    duration: 1400,
+    delay: 3200,
+    trailWidth: 1.72,
+    svgStyle: {
+      width: '100%',
+      height: '100%'
+    },
+    step: (state, bar) => {
+      bar.setText(Math.round(bar.value() * 100) + ' %');
+    }
+  });
+
+  bar.animate(.80);
+
+  var bar = new ProgressBar.Line(lineprog7, {
+    strokeWidth: 1.72,
+    easing: 'easeInOut',
+    duration: 1400,
+    delay: 3200,
+    trailWidth: 1.72,
+    svgStyle: {
+      width: '100%',
+      height: '100%'
+    },
+    step: (state, bar) => {
+      bar.setText(Math.round(bar.value() * 100) + ' %');
+    }
+  });
+
+  bar.animate(.90);
+
+  
+
   // Contact form
   $('.art-input').keyup(function() {
     if ($(this).val()) {
@@ -714,6 +750,7 @@ $(function() {
     currentSheet = (sheets[$(this).attr("data-theme")]).appendTo($("head"));
   });
 
+
   // $('.open-changer').click(function() {
   //   $('.color-change').toggleClass("active-changer");
   // });
@@ -722,9 +759,39 @@ $(function() {
   //   $('.color-change').removeClass("active-changer");
   // });
 
+
+  function calculateAge(birthDate) {
+    // Parse the birth date string to a Date object
+    const birthDateObj = new Date(birthDate);
+
+    // Get the current date
+    const currentDate = new Date();
+
+    // Calculate the difference in years
+    let age = currentDate.getFullYear() - birthDateObj.getFullYear();
+
+    // Adjust the age if the birthday hasn't occurred yet this year
+    if (currentDate.getMonth() < birthDateObj.getMonth() || 
+        (currentDate.getMonth() === birthDateObj.getMonth() && currentDate.getDate() < birthDateObj.getDate())) {
+        age--;
+    }
+
+    $("#my_age").html(age);
+    return age;
+}
+
+// Example usage
+const birthDate = "1994-05-16"; 
+const age = calculateAge(birthDate);
+
+console.log("Age:", age);
+
+
   /* -------------------------------------------
 
   demo end
+
+  
 
   ------------------------------------------- */
 }, 2000);

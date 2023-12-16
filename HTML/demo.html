@@ -19,7 +19,11 @@
    <link rel="stylesheet" href="css/plugins/fancybox.min.css">
    <!-- main css -->
    <link rel="stylesheet" href="css/style.css">
-
+    <style>
+        div#info_page {
+            display: none;
+        }
+    </style>
    <title>ASHOKKUMAR P - Web developer</title>
    </head>
 
@@ -50,16 +54,9 @@
                      <!-- scroll frame -->
                      <div id="scrollbar" class="art-scroll-frame">
                
-                        <div id="banner_page"></div>
-                        <div id="counts_page"></div>
-                        <div id="service_page"></div>
-                        <div id="recommendations_page"></div>
-                        <div id="works_page"></div>
-                        <div id="history_page"></div>
-                        <div id="contact_page"></div>
-                        <div id="brand_page"></div>
-                        <div id="copyright_page"></div>
-                  
+             
+                        <div id="demo_page"></div>
+                 
                      </div>
                      <!-- scroll frame end -->
                   </div>
@@ -122,37 +119,12 @@
                .then(response => response.text())
                .then(data => document.getElementById('info_page').innerHTML = data);
 
-         fetch('sections/banner.html')
-               .then(response => response.text())
-               .then(data => document.getElementById('banner_page').innerHTML = data);
 
-         fetch('sections/banner.html')
+         fetch('sections/demo.html')
                .then(response => response.text())
-               .then(data => document.getElementById('banner_page').innerHTML = data);
+               .then(data => document.getElementById('demo_page').innerHTML = data);
 
-         fetch('sections/counts.html')
-               .then(response => response.text())
-               .then(data => document.getElementById('counts_page').innerHTML = data);
-
-         fetch('sections/service.html')
-               .then(response => response.text())
-               .then(data => document.getElementById('service_page').innerHTML = data);
-
-         fetch('sections/recommendations.html')
-               .then(response => response.text())
-               .then(data => document.getElementById('recommendations_page').innerHTML = data);
-
-         fetch('sections/works.html')
-               .then(response => response.text())
-               .then(data => document.getElementById('works_page').innerHTML = data);
-
-         fetch('sections/history.html')
-               .then(response => response.text())
-               .then(data => document.getElementById('history_page').innerHTML = data);
-
-         fetch('sections/contact.html')
-               .then(response => response.text())
-               .then(data => document.getElementById('contact_page').innerHTML = data);
+      
 
          fetch('sections/brand.html')
                .then(response => response.text())
