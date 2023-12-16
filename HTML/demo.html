@@ -28,7 +28,6 @@
    </head>
 
    <body>
-
       <!-- app -->
       <div class="art-app">
          <!-- mobile top bar -->
@@ -106,7 +105,6 @@
       <!-- app end -->
 
       <script>
-
          fetch('include/nav.html')
             .then(response => response.text())
             .then(data => document.getElementById('nav_page').innerHTML = data);
@@ -124,20 +122,56 @@
                .then(response => response.text())
                .then(data => document.getElementById('demo_page').innerHTML = data);
 
-      
-
-         fetch('sections/brand.html')
-               .then(response => response.text())
-               .then(data => document.getElementById('brand_page').innerHTML = data);
-
-         fetch('include/copyright.html')
-               .then(response => response.text())
-               .then(data => document.getElementById('copyright_page').innerHTML = data);
-
-
-
-
       </script>
+
+        <script>
+            setTimeout(function() {
+        
+            console.log("demo");
+            
+            const projectsData = [
+                { 
+                    imageUrl: 'img/demo/1.png',
+                    thumbnailUrl: 'img/demo/1.png',
+                    title: 'Vuexy Admin v9.7.0',
+                    description: 'Vuexy Admin Template',
+                    link: 'https://azthemes.netlify.app/themes/vuexyadmin/demo/html/vertical-menu-template/',
+                    categoryName: 'adminTemplate'
+                },
+                { 
+                    imageUrl: 'img/works/original-size/1.jpg',
+                    thumbnailUrl: 'img/works/thumbnail/1.jpg',
+                    title: 'Project Title 2',
+                    description: 'Description for Project 1.',
+                    link: 'projects-bonaventura.php',
+                    categoryName: 'logos'
+                },
+            ];
+        
+            // Get the container element where the dynamic elements will be added
+            const artGridContainer = document.getElementById('artGridContainer');
+        
+            for (let i = 0; i < projectsData.length; i++) {
+                const artGridItem = document.createElement('div');
+                artGridItem.className = `art-grid-item ${projectsData[i].categoryName}`;
+                artGridItem.innerHTML = `
+                    <a data-fancybox="gallery" href="${projectsData[i].imageUrl}" class="art-a art-portfolio-item-frame art-square">
+                        <img src="${projectsData[i].thumbnailUrl}" alt="item">
+                        <span class="art-item-hover"><i class="fas fa-expand"></i></span>
+                    </a>
+                    <div class="art-item-description">
+                        <h5 class="mb-15">${projectsData[i].title}</h5>
+                        <div class="mb-15">${projectsData[i].description}</div>
+                        <a target="_blank" href="${projectsData[i].link}" class="art-link art-color-link art-w-chevron">Read more</a>
+                    </div>
+                `;
+                artGridContainer.appendChild(artGridItem);
+            }
+        
+        
+        }, 2000);
+        
+        </script>
       
 
       <!-- jquery js -->
