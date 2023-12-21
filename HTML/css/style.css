@@ -2322,7 +2322,7 @@ portfolio
 .art-grid .art-grid-item .art-item-description {
   position: absolute;
   z-index: 9;
-  bottom: 0;
+  bottom: 140px;
   left: 15px;
   width: calc(100% - 29px);
   padding: 30px;
@@ -2334,10 +2334,10 @@ portfolio
   -webkit-transition: 0.55s ease-in-out;
   transition: 0.55s ease-in-out;
 }
-.art-grid .art-grid-item:hover .art-item-description {
+/* .art-grid .art-grid-item:hover .art-item-description {
   -webkit-transform: translateY(0);
           transform: translateY(0);
-}
+} */
 .art-grid.art-grid-2-col .art-grid-item {
   width: 50%;
 }
