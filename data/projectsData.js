@@ -22,7 +22,7 @@ const projectsData = [
         siteLink: 'https://silvercollections.in/',
         categoryName: 'wordpress'
     },
-    {   id: 1,
+    {   id: 2,
         imageUrl: 'img/project/2.png',
         thumbnailUrl: 'img/project/2.png',
         title: 'Alagammai Traders',
@@ -49,5 +49,23 @@ const projectsData = [
         link: 'project_details.html?id=2',
         siteLink: 'https://alagammaitraders.in/',
         categoryName: 'laravel'
+    },
+    {   id: 3,
+        imageUrl: 'img/project/3.png',
+        thumbnailUrl: 'img/project/3.png',
+        title: 'Signify',
+        framework: 'Flutter',
+        description: `
+            Signify is a comprehensive Audit Preparation and Audit Management System designed to simplify and digitize the complete audit lifecycle, from project creation to final approval and reporting. The solution consists of a Flutter Mobile Application for field users, a Laravel-based Admin Panel for management and administration, and a Laravel REST API that securely connects all system components. The platform includes Role-Based Access Control (RBAC) to ensure users can access only the features and data relevant to their responsibilities. It also provides an integrated project workflow, review and approval process, reporting dashboard, and real-time notification system to improve collaboration and operational efficiency.
+
+The system supports three primary user roles: Super Admin, Sales Manager, and Auditor. The Super Admin manages users, projects, system settings, and monitors overall project progress through an analytical dashboard displaying project statuses and user statistics. The Sales Manager creates and manages audit projects by entering project information, assigning auditors, saving projects as drafts, submitting them for review, and tracking their progress through each stage of the audit process. The Auditor receives assigned projects, completes various audit forms—including the Audit Preparation Form, Audit Report Supplementary Form, and Installation Audit Form—saves work in progress, submits completed forms, and updates project statuses.
+
+Each project contains detailed information such as project number, project name, version, audit date, scope details, audit type, special remarks, and team assignments, including opportunity owner, audit coordinator, auditor, proposal manager, technical designer, procurement manager, and liaison designer. Projects follow a structured workflow that progresses from Draft to Submitted, Under Review, and finally Approved/Completed, ensuring every audit passes through a standardized review and approval process.
+
+The platform includes dedicated dashboards tailored to each user role, enabling users to quickly view project statistics, monitor progress, and access relevant actions. A built-in notification system keeps Sales Managers and Auditors informed of important events, such as project assignments, audit form submissions, clarification requests, approvals, and project completion. By centralizing project management, audit documentation, approvals, reporting, and communication into a single platform, Signify improves collaboration, enhances transparency, reduces manual processes, and ensures efficient and standardized audit management across the organization.
+        `,
+        link: 'project_details.html?id=3',
+        siteLink: 'https://signify.com/',
+        categoryName: 'flutter'
     }
 ];
